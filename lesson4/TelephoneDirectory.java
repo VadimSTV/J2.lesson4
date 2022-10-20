@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class TelephoneDirectory {
+public class TelephoneDirectory { //Публичный класс нашей телефонной книги
     private final Map<String, ArrayList<String>> phoneBook = new HashMap<>();
     public void add(String lastName, String phoneNumber) {
         ArrayList<String> phoneNumberList = new ArrayList<>();
