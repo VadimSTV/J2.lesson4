@@ -7,10 +7,10 @@ public class Main {
         String[] colors = {"White", "Black", "Orange", "Red", "Blue", "Yellow", "Black",
                             "Pink", "White", "Green", "Grey", "Grey", "Blue", "Purple",
                             "Green", "Brown", "Orange", "White", "Pink", "Black", "Yellow"};
-        System.out.println("Начальный массив: " + Arrays.asList(colors));
+        System.out.println("Начальный массив: " + Arrays.asList(colors)); //Выводим начальный список colors в терминал
         Set<String> colorsUnique = new HashSet<>(Arrays.asList(colors));
-        System.out.println("Список уникальных слов начального массива: " + colorsUnique);
-        Map<String, Integer> colorsRepeat = new HashMap<>();
+        System.out.println("Список уникальных слов начального массива: " + colorsUnique); //Выводим список colorsUnique в терминал
+        Map<String, Integer> colorsRepeat = new HashMap<>(); // Метод определения повторения цветов
         for (String color : colors) {
             if (colorsRepeat.containsKey(color)) {
                 colorsRepeat.put(color, colorsRepeat.get(color) + 1);
